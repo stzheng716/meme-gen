@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
     <title>Meme Generator</title>
 </head>
+
 <body>
-    
+    <section>
+        <h1>I CAN HAZ MEMEZ?</h1>
+        <p>Fill out tje form to start creating memes!</p>
+        <form action="#" id="memeform">
+            <label for="image_URL">image URL</label>
+            <input type="url" name="image_URL" id="imageURL" placeholder="What's the URL for your meme image?">
+            <label for="top_text">Text On Top</label>
+            <input type="text" name="top_text" id="top_text"
+                placeholder="(Optional)What text do you want at the top of the meme?">
+            <label for="bottom_text">Text On Bottom</label>
+            <input type="text" name="bottom_text" id="bottomText"
+                placeholder="(Optional)What text do you want at the bottom of the meme?">
+            <button type="submit">Add Meme</button>
+        </form>
+        <div id="memeSpace"></div>
+    </section>
+    <script src="memegen.js"></script>
 </body>
+
 </html>
