@@ -17,6 +17,14 @@
     text-align: center;
 }
 
+.card-footer{
+    text-align: center;
+}
+
+.card-footer > h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .overlay{
     position: absolute;
     display: flex;
