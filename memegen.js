@@ -18,13 +18,17 @@ form.addEventListener('submit', function(event) {
     newImg.classList.add('thumbnail',);
     memeDiv.append(newImg);
 
+    const remove = document.createElement('h2');
+    remove.innerText = "X"
+    remove.classList.add('overlay')
+
     const topText = document.createElement('span');
     topText.innerText = topInput.value;
     const bottomText = document.createElement('span');
     bottomText.innerText = bottomInput.value;
     topText.classList.add('absolutePositionTop', 'memeText');
     bottomText.classList.add('absolutePositionBottom', 'memeText');
-    memeDiv.append(topText, bottomText);
+    memeDiv.append(topText, bottomText, remove);
     memeSpace.append(memeDiv);
     
     imageURL.value = '';
